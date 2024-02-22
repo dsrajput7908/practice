@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: white;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.header .links a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 40px;
+    transition: all ease-in-out 40ms;
+}
+.header .links a:hover{
+    color:royalblue;
+}
+.landing-page{
+    width: 100%;
+    height: 550px;
+    background: url('image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 350px;    
+}
+.landing-page h1{
+    font-size: 55px;
+    margin-bottom: 5px;
+    color: white;
+}
+.landing-page h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+.landing-page p{
+    font-size: 15px;
+    color: white;
+}
+.services{
+    width: 100%;
+    height: 400px;
+    background: whitesmoke;
+    padding: 10px 5px;
+}
+.services .title{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services .title h1{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.services .items{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.services .items .card{
+    width: 20%;
+    height: 100%;
+    border: 2px solid silver;
+    border-radius: 10px;
+    transition: all ease-in 0.4s;
+}
+.services .items .card:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 10px;
+    border-color: black; 
+    transform: scale(1.05);
+}
+.services .items .card img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+} 
+.services .items .card p{
+    padding: 10px;
+    text-align: justify;
+    line-height: 25px;
+}
+.about{
+    width:100%;
+    height:450px;
+    padding:20px 40px;
+}
+.about .content{
+    width:100%;
+    height:50%;
+    padding:10px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}
+.about .content img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    transition: all ease-in 0.4s;
+}
+.about .content .img:hover{
+    border-radius: 10px;
+    cursor:pointer;
+}
+.contact{
+    width:100%;
+    height:550px;
+    background:whitesmoke;
+    padding: 20px 5%;
+}
+.contact .title{
+    width:100%;
+    height:60px;
+    text-align: center;
+}
+.contact .background{
+    width:40%;
+    height:480px;
+    float:left;
+    background:url('https://thumbs.dreamstime.com/b/high-school-students-studying-classroom-young-group-267734910.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:2px solid blueviolet;
+    border-right: none;
+}
+.contact .contact-form{
+    width:60%;
+    height:480px;
+    float:left;
+    background:white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border:2px solid blueviolet;
+    border-left: none;
+    padding:15px 5%;
+}
+.contact .contact-form form{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap:15px;
+    padding:40px 0px;
+}
+.contact .contact-form form input,.contact .contact-form form select{
+    width:45%;
+    padding:12px;
+    border:3px solid silver;
+    border-radius: 4px;
+    outline:none;
+    font-size: 18px;
+    transition: all ease-in 0.4s;
+}
+.contact .contact-form form input:focus,.contact .contact-form form select:focus,.contact .contact-form form textarea:focus{
+    border:3px solid blueviolet;
+}
+.contact .contact-form form textarea{
+    width:92%;
+    padding:12px;
+    border:3px solid silver;
+    border-radius: 4px;
+    outline:none;
+    font-size: 18px;
+}
+.contact .contact-form form input[type="submit"]{
+    width:92%;
+    background: blueviolet;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+}
+.contact .contact-form form input[type="submit"]:hover{
+    background: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
